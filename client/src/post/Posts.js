@@ -34,9 +34,6 @@ class Posts extends Component {
     }
 
     async componentDidMount() {
-        //this.state = {
-        //    ticket: ''
-       // }
         const count = await countTotalPosts()
         this.setState({count: count.data})
         this.fetchData()
